@@ -1,0 +1,18 @@
+<MyGrid>
+
+	word:word
+
+	GridLayout:
+		cols:1
+		size: root.width, root.height
+
+		TextInput:
+			id:word
+			multiline:False
+
+		Button:
+			bold:True
+			size_hint:.8, .3
+			text:'Putar'
+			background_color:0,1,1,1
+			on_release: root.play_sound()
